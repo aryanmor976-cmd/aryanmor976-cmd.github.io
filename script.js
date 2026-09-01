@@ -130,23 +130,15 @@ animatedElements.forEach(element => {
 // ======================================
 
 const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
+const mobileNavLinks = document.querySelector(".nav-links");
 
 menuToggle.addEventListener("click", () => {
-
-    navLinks.classList.toggle("open");
-
+    mobileNavLinks.classList.toggle("open");
 });
 
-
 // Close menu after clicking a navigation link
-
 document.querySelectorAll(".nav-links a").forEach(link => {
-
     link.addEventListener("click", () => {
-
-        navLinks.classList.remove("open");
-
+        mobileNavLinks.classList.remove("open");
     });
-
 });
