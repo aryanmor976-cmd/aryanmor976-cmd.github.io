@@ -1,142 +1,935 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Student Expense Tracker | Aryan Mor</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Aryan Mor</a>
 
-            <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        <div class="logo">
+            Aryan Mor
         </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#projects">
+                Projects
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+        <button class="menu-toggle"
+                aria-label="Open navigation">
+            ☰
+        </button>
+
     </nav>
 
-    <!-- Project Header -->
-    <section class="project-detail">
-        <div class="project-container">
 
-            <div class="project-header">
-                <p class="project-label">PROJECT</p>
+    <!-- Project Page -->
+    <main class="project-detail">
 
-                <h1>Student Expense Tracker</h1>
+        <!-- Project Hero -->
+        <p class="section-label">
+            PROJECT 02
+        </p>
 
-                <p class="project-subtitle">
-                    Python & MySQL Expense Management Application
-                </p>
+        <h1>
+            Student Expense Tracker
+        </h1>
 
-                <div class="project-links">
-                    <a href="https://github.com/aryanmor976-cmd/StudentExpenseTracker"
-                       target="_blank">
-                        GitHub
-                    </a>
+        <p class="project-subtitle">
+            Python & MySQL Expense Management Application
+        </p>
+
+
+        <!-- Main Project Card -->
+        <div class="project-detail-card">
+
+
+            <!-- About -->
+            <h2>
+                About the Project
+            </h2>
+
+            <p>
+                Student Expense Tracker is a command-line application
+                developed with Python and MySQL to make everyday expense
+                management more organized for students.
+            </p>
+
+            <p>
+                The application allows users to record, view, search,
+                update and delete expense records while keeping the data
+                stored in a MySQL database. It also provides spending
+                summaries that make it easier to understand expenses by
+                total amount, category and month.
+            </p>
+
+            <p>
+                I built this project to strengthen my understanding of
+                Python programming, SQL, database connectivity and CRUD
+                operations by applying them to a practical problem.
+            </p>
+
+
+            <!-- Project Screenshots -->
+            <h2>
+                Application Preview
+            </h2>
+
+            <div class="project-image">
+
+                <img
+                    src="https://raw.githubusercontent.com/aryanmor976-cmd/StudentExpenseTracker/main/screenshots/main-menu.png"
+                    alt="Student Expense Tracker main menu"
+                >
+
+            </div>
+
+
+            <!-- Problem -->
+            <h2>
+                The Problem
+            </h2>
+
+            <p>
+                Students often have small daily expenses spread across
+                different categories, making it difficult to keep track
+                of where money is being spent. A simple system was needed
+                to store expenses consistently and provide useful
+                summaries without depending on manual calculations.
+            </p>
+
+
+            <!-- Approach -->
+            <h2>
+                My Approach
+            </h2>
+
+            <p>
+                I designed the application around a menu-driven interface
+                so that each operation could be accessed directly from
+                the command line. Python handles the application logic
+                and user interaction, while MySQL provides persistent
+                storage for the expense records.
+            </p>
+
+            <p>
+                The database layer was separated from the main application
+                logic, making the project easier to understand and
+                maintain. SQL queries are used not only for CRUD operations
+                but also for calculating spending summaries.
+            </p>
+
+
+            <!-- Workflow -->
+            <h2>
+                How It Works
+            </h2>
+
+            <div class="project-workflow">
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Enter Expense
+                    </h3>
+
+                    <p>
+                        The user enters the date, category,
+                        description and amount.
+                    </p>
+
                 </div>
+
+
+                <div class="workflow-arrow">
+                    →
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Validate Input
+                    </h3>
+
+                    <p>
+                        Python processes the entered information
+                        before performing database operations.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-arrow">
+                    →
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Store in MySQL
+                    </h3>
+
+                    <p>
+                        Expense records are stored in the
+                        expenses table.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-arrow">
+                    →
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Analyze Spending
+                    </h3>
+
+                    <p>
+                        SQL queries generate useful expense
+                        summaries and category-based analysis.
+                    </p>
+
+                </div>
+
             </div>
 
-            <!-- Overview -->
-            <div class="project-section">
-                <h2>Overview</h2>
-
-                <p>
-                    Student Expense Tracker is a menu-driven application built
-                    with Python and MySQL to record, manage, and analyze
-                    student expenses. The application stores expense records
-                    in a MySQL database and provides a simple command-line
-                    interface for everyday expense management.
-                </p>
-            </div>
 
             <!-- Features -->
-            <div class="project-section">
-                <h2>Key Features</h2>
+            <h2>
+                Key Features
+            </h2>
 
-                <ul>
-                    <li>Add and store expense records</li>
-                    <li>View all recorded expenses</li>
-                    <li>Search expenses by category</li>
-                    <li>Update existing expense records</li>
-                    <li>Delete expense records</li>
-                    <li>Calculate total, average, and count of expenses</li>
-                    <li>Generate category-wise expense summaries</li>
-                    <li>Generate monthly expense summaries</li>
-                    <li>Validate user input through the application</li>
-                </ul>
-            </div>
+            <div class="feature-grid">
 
-            <!-- Technologies -->
-            <div class="project-section">
-                <h2>Technologies Used</h2>
 
-                <div class="tech-list">
-                    <span>Python</span>
-                    <span>MySQL</span>
-                    <span>SQL</span>
-                    <span>MySQL Connector/Python</span>
-                    <span>python-dotenv</span>
-                    <span>VS Code</span>
+                <div class="feature-item">
+
+                    <h3>
+                        Add Expenses
+                    </h3>
+
+                    <p>
+                        Record a new expense using its date,
+                        category, description and amount.
+                    </p>
+
                 </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        View Expenses
+                    </h3>
+
+                    <p>
+                        Display expense records stored in
+                        the MySQL database.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Category Search
+                    </h3>
+
+                    <p>
+                        Search for stored expenses based
+                        on their category.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Update Records
+                    </h3>
+
+                    <p>
+                        Modify an existing expense using
+                        its unique ID.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Delete Records
+                    </h3>
+
+                    <p>
+                        Remove an expense record from
+                        the database when required.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Expense Summary
+                    </h3>
+
+                    <p>
+                        Calculate total expenses, average
+                        spending and the number of records.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Category Analysis
+                    </h3>
+
+                    <p>
+                        Group expenses by category and
+                        calculate spending for each category.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Monthly Analysis
+                    </h3>
+
+                    <p>
+                        Analyze expenses using
+                        date-based monthly queries.
+                    </p>
+
+                </div>
+
             </div>
+
+
+            <!-- CRUD -->
+            <h2>
+                CRUD Operations
+            </h2>
+
+            <p>
+                The project uses the four fundamental database operations
+                to manage expense records.
+            </p>
+
+            <div class="feature-grid">
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Create
+                    </h3>
+
+                    <p>
+                        Add Expense
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Read
+                    </h3>
+
+                    <p>
+                        View All Expenses and Search by Category
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Update
+                    </h3>
+
+                    <p>
+                        Update Expense
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Delete
+                    </h3>
+
+                    <p>
+                        Delete Expense
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SQL Analysis -->
+            <h2>
+                SQL-Based Analysis
+            </h2>
+
+            <p>
+                SQL is also used to turn stored expense records into
+                useful summaries. The project uses aggregation and
+                grouping queries to analyze spending.
+            </p>
+
+            <div class="feature-grid">
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        SUM()
+                    </h3>
+
+                    <p>
+                        Calculates total spending.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        AVG()
+                    </h3>
+
+                    <p>
+                        Calculates the average expense.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        COUNT()
+                    </h3>
+
+                    <p>
+                        Counts the number of expense records.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        GROUP BY
+                    </h3>
+
+                    <p>
+                        Generates category-wise spending summaries.
+                    </p>
+
+                </div>
+
+            </div>
+
 
             <!-- Database -->
-            <div class="project-section">
-                <h2>Database</h2>
+            <h2>
+                Database Design
+            </h2>
 
-                <p>
-                    The application uses a MySQL database named
-                    <strong>student_expense_tracker</strong> with an
-                    <strong>expenses</strong> table for persistent storage.
-                    Expense records include the date, category, description,
-                    and amount.
-                </p>
+            <p>
+                The application uses a MySQL database named
+                <strong>student_expense_tracker</strong>.
+                Expense information is stored in the
+                <strong>expenses</strong> table.
+            </p>
+
+
+            <div class="project-workflow">
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        01
+                    </span>
+
+                    <h3>
+                        ID
+                    </h3>
+
+                    <p>
+                        INT primary key with auto-increment.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Expense Date
+                    </h3>
+
+                    <p>
+                        DATE field for the expense date.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Category
+                    </h3>
+
+                    <p>
+                        VARCHAR field for expense category.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        04
+                    </span>
+
+                    <h3>
+                        Description
+                    </h3>
+
+                    <p>
+                        Optional description of the expense.
+                    </p>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <span class="workflow-number">
+                        05
+                    </span>
+
+                    <h3>
+                        Amount
+                    </h3>
+
+                    <p>
+                        DECIMAL field for the amount spent.
+                    </p>
+
+                </div>
+
             </div>
 
-            <!-- What I Built -->
-            <div class="project-section">
-                <h2>What I Built</h2>
 
-                <ul>
-                    <li>
-                        Designed a structured database for storing expense
-                        information.
-                    </li>
+            <!-- Technology -->
+            <h2>
+                Technologies Used
+            </h2>
 
-                    <li>
-                        Connected Python with MySQL for database operations.
-                    </li>
+            <div class="tech-list">
 
-                    <li>
-                        Implemented CRUD operations through a menu-driven
-                        interface.
-                    </li>
+                <span>
+                    Python 3
+                </span>
 
-                    <li>
-                        Added SQL-based expense analysis for category-wise
-                        and monthly spending.
-                    </li>
-                </ul>
+                <span>
+                    MySQL
+                </span>
+
+                <span>
+                    SQL
+                </span>
+
+                <span>
+                    MySQL Connector/Python
+                </span>
+
+                <span>
+                    python-dotenv
+                </span>
+
+                <span>
+                    VS Code
+                </span>
+
             </div>
 
-            <!-- Project Links -->
-            <div class="project-section project-actions">
-                <h2>Project Links</h2>
 
-                <a class="primary-btn"
-                   href="https://github.com/aryanmor976-cmd/StudentExpenseTracker"
-                   target="_blank">
-                    View Project on GitHub
-                </a>
+            <!-- Architecture -->
+            <h2>
+                Project Structure
+            </h2>
+
+            <div class="feature-grid">
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        main.py
+                    </h3>
+
+                    <p>
+                        Contains the main application logic
+                        and menu-driven interface.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        database.py
+                    </h3>
+
+                    <p>
+                        Handles the connection between
+                        Python and MySQL.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        database.sql
+                    </h3>
+
+                    <p>
+                        Contains the SQL required to create
+                        the database and expenses table.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        requirements.txt
+                    </h3>
+
+                    <p>
+                        Lists the Python packages required
+                        by the application.
+                    </p>
+
+                </div>
+
             </div>
+
+
+            <!-- Screenshots -->
+            <h2>
+                Application Screenshots
+            </h2>
+
+
+            <div class="project-image">
+
+                <img
+                    src="https://raw.githubusercontent.com/aryanmor976-cmd/StudentExpenseTracker/main/screenshots/view-expenses.png"
+                    alt="Student Expense Tracker view expenses screen"
+                >
+
+            </div>
+
+
+            <div class="project-image">
+
+                <img
+                    src="https://raw.githubusercontent.com/aryanmor976-cmd/StudentExpenseTracker/main/screenshots/expense-summary.png"
+                    alt="Student Expense Tracker expense summary"
+                >
+
+            </div>
+
+
+            <div class="project-image">
+
+                <img
+                    src="https://raw.githubusercontent.com/aryanmor976-cmd/StudentExpenseTracker/main/screenshots/category-summary.png"
+                    alt="Student Expense Tracker category summary"
+                >
+
+            </div>
+
+
+            <div class="project-image">
+
+                <img
+                    src="https://raw.githubusercontent.com/aryanmor976-cmd/StudentExpenseTracker/main/screenshots/monthly-summary.png"
+                    alt="Student Expense Tracker monthly summary"
+                >
+
+            </div>
+
+
+            <!-- Security -->
+            <h2>
+                Configuration & Security
+            </h2>
+
+            <p>
+                Database connection details are loaded through environment
+                variables using <strong>python-dotenv</strong>. The local
+                <strong>.env</strong> file is excluded from Git so that
+                database credentials are not committed to the repository.
+            </p>
+
+
+            <!-- Learning -->
+            <h2>
+                What I Learned
+            </h2>
+
+            <div class="feature-grid">
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Python
+                    </h3>
+
+                    <p>
+                        Improved my understanding of functions,
+                        program structure, loops and input handling.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        SQL
+                    </h3>
+
+                    <p>
+                        Practiced queries for data retrieval,
+                        filtering, aggregation and grouping.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Database Design
+                    </h3>
+
+                    <p>
+                        Learned how application data can be
+                        structured and stored in MySQL.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <h3>
+                        Python-MySQL Connectivity
+                    </h3>
+
+                    <p>
+                        Built practical experience connecting
+                        application logic with a relational database.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Future -->
+            <h2>
+                Future Improvements
+            </h2>
+
+            <p>
+                The current version focuses on the core command-line
+                functionality. Possible future improvements include:
+            </p>
+
+            <ul>
+
+                <li>
+                    Graphical user interface
+                </li>
+
+                <li>
+                    User authentication
+                </li>
+
+                <li>
+                    Student profiles
+                </li>
+
+                <li>
+                    Budget limits and alerts
+                </li>
+
+                <li>
+                    Expense charts and visualizations
+                </li>
+
+                <li>
+                    CSV or Excel export
+                </li>
+
+                <li>
+                    Web-based version
+                </li>
+
+            </ul>
+
+
+            <!-- Project Details -->
+            <h2>
+                Project Details
+            </h2>
+
+            <p>
+                <strong>Built:</strong> August 2026 – Present
+            </p>
+
+            <p>
+                <strong>Type:</strong> Self-Initiated Project
+            </p>
+
+            <p>
+                <strong>Interface:</strong> Command Line
+            </p>
+
+            <p>
+                <strong>Database:</strong> MySQL
+            </p>
+
 
         </div>
-    </section>
+
+
+        <!-- Actions -->
+        <div class="project-actions">
+
+            <a
+                href="https://github.com/aryanmor976-cmd/StudentExpenseTracker"
+                class="project-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View Source on GitHub
+            </a>
+
+
+            <a
+                href="index.html#projects"
+                class="project-btn"
+            >
+                ← Back to Projects
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Aryan Mor. Built with HTML, CSS & JavaScript.
+        </p>
+
+    </footer>
+
 
 </body>
+
 </html>
